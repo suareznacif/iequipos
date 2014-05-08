@@ -1,0 +1,55 @@
+<h1>Listando el Inventario</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Marca:</th>
+      <th>Modelo:</th>
+      <th>Tipo:</th>
+      <th>Costo:</th>
+      <th>Sistema operativo:</th>
+      <th>Cpu:</th>
+      <th>Ram:</th>
+      <th>Disco duro:</th>
+      <th>Tarjeta madre:</th>
+      <th>Monitor:</th>
+      <th>Tipo conexion:</th>
+      <th>Direccion mac:</th>
+      <th>Usuario:</th>
+      <th>Area:</th>
+      <th>Estado general:</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventarios.each do |inventario| %>
+      <tr>
+        <td><%= inventario.marca %></td>
+        <td><%= inventario.modelo %></td>
+        <td><%= inventario.tipo %></td>
+        <td><%= inventario.costo %></td>
+        <td><%= inventario.sistema_operativo %></td>
+        <td><%= inventario.cpu %></td>
+        <td><%= inventario.ram %></td>
+        <td><%= inventario.disco_duro %></td>
+        <td><%= inventario.tarjeta_madre %></td>
+        <td><%= inventario.monitor %></td>
+        <td><%= inventario.tipo_conexion %></td>
+        <td><%= inventario.direccion_mac %></td>
+        <td><%= inventario.usuario %></td>
+        <td><%= inventario.area %></td>
+        <td><%= inventario.estado_general %></td>
+        <td><%= link_to 'Mostrar', inventario %></td>
+        <td><%= link_to 'Editar', edit_inventario_path(inventario) %></td>
+        <td><%= link_to 'Eliminar', inventario, method: :delete, data: { confirm: 'Estas Seguro(a)?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Inventario', new_inventario_path %>

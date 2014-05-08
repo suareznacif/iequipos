@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @inventario.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @inventario.modelo %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @inventario.tipo %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @inventario.costo %>
+</p>
+
+<p>
+  <strong>Sistema operativo:</strong>
+  <%= @inventario.sistema_operativo %>
+</p>
+
+<p>
+  <strong>Cpu:</strong>
+  <%= @inventario.cpu %>
+</p>
+
+<p>
+  <strong>Ram:</strong>
+  <%= @inventario.ram %>
+</p>
+
+<p>
+  <strong>Disco duro:</strong>
+  <%= @inventario.disco_duro %>
+</p>
+
+<p>
+  <strong>Tarjeta madre:</strong>
+  <%= @inventario.tarjeta_madre %>
+</p>
+
+<p>
+  <strong>Monitor:</strong>
+  <%= @inventario.monitor %>
+</p>
+
+<p>
+  <strong>Tipo conexion:</strong>
+  <%= @inventario.tipo_conexion %>
+</p>
+
+<p>
+  <strong>Direccion mac:</strong>
+  <%= @inventario.direccion_mac %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @inventario.usuario %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @inventario.area %>
+</p>
+
+<p>
+  <strong>Estado general:</strong>
+  <%= @inventario.estado_general %>
+</p>
+
+<%= link_to 'Editar', edit_inventario_path(@inventario) %> |
+<%= link_to 'Atras', inventarios_path %>

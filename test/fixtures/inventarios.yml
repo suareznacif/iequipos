@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marca: MyString
+  modelo: MyString
+  tipo: MyString
+  costo: 1.5
+  sistema_operativo: MyString
+  cpu: MyString
+  ram: MyString
+  disco_duro: MyString
+  tarjeta_madre: MyString
+  monitor: MyString
+  tipo_conexion: MyString
+  direccion_mac: MyString
+  usuario: MyString
+  area: MyString
+  estado_general: MyString
+
+two:
+  marca: MyString
+  modelo: MyString
+  tipo: MyString
+  costo: 1.5
+  sistema_operativo: MyString
+  cpu: MyString
+  ram: MyString
+  disco_duro: MyString
+  tarjeta_madre: MyString
+  monitor: MyString
+  tipo_conexion: MyString
+  direccion_mac: MyString
+  usuario: MyString
+  area: MyString
+  estado_general: MyString
