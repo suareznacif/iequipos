@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <ul class="nav navbar-nav">
+      <li><%= link_to 'Inicio', root_path %></li>
+      <li><%= link_to 'Inventario', inventarios_path%></li>
+    </ul>
+  </div>
+</nav>
 <%= yield %>
 
 </body>

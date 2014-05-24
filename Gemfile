@@ -2,9 +2,8 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 gem 'rails', '4.0.2'
-
-group :development do
-  gem 'sqlite3', '~> 1.3.9'
+group :development, :test do
+gem 'sqlite3', '~> 1.3.9' 
 end
 
 gem 'sass-rails', '~> 4.0.0'
@@ -14,7 +13,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
-
+gem 'devise', '~> 3.2.4'
 group :doc do
 gem 'sdoc', require: false
 end

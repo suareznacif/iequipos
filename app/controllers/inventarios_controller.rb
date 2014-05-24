@@ -28,10 +28,10 @@ class InventariosController < ApplicationController
 
     respond_to do |format|
       if @inventario.save
-        format.html { redirect_to @inventario, notice: 'Inventario was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @inventario }
+        format.html { redirect_to @inventario, notice: 'El Inventario ha sido Creado' }
+        format.json { render action: 'Mostrar', status: :created, location: @inventario }
       else
-        format.html { render action: 'new' }
+        format.html { render :new }
         format.json { render json: @inventario.errors, status: :unprocessable_entity }
       end
     end
@@ -42,10 +42,10 @@ class InventariosController < ApplicationController
   def update
     respond_to do |format|
       if @inventario.update(inventario_params)
-        format.html { redirect_to @inventario, notice: 'Inventario was successfully updated.' }
+        format.html { redirect_to @inventario, notice: 'El Inventario ha sido Actualizado.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        format.html { render action: 'Editar' }
         format.json { render json: @inventario.errors, status: :unprocessable_entity }
       end
     end
